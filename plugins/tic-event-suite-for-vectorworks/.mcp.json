@@ -1,0 +1,8 @@
+{
+  "mcpServers": {
+    "TIC Event Suite for Vectorworks": {
+      "type": "http",
+      "url": "https://theimaginationcollaborative.online/claude/mcp"
+    }
+  }
+}

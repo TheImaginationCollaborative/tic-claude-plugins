@@ -1,0 +1,19 @@
+{
+  "name": "tic-event-suite",
+  "owner": {
+    "name": "The Imagination Collaborative",
+    "email": "support@theimaginationcollaborative.com"
+  },
+  "metadata": {
+    "description": "Claude plugins for the TIC Event Suite for Vectorworks."
+  },
+  "plugins": [
+    {
+      "name": "tic-event-suite-for-vectorworks",
+      "source": "./plugins/tic-event-suite-for-vectorworks",
+      "description": "Lets Claude draw, place and change TIC event objects, organise sheets and run the suite's reports in your own Vectorworks drawing. Needs the TIC Event Suite on the Pro plan.",
+      "version": "0.7.0",
+      "homepage": "https://manual.theimaginationcollaborative.online"
+    }
+  ]
+}
