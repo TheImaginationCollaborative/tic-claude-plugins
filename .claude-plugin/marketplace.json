@@ -12,7 +12,7 @@
       "name": "tic-event-suite-for-vectorworks",
       "source": "./plugins/tic-event-suite-for-vectorworks",
       "description": "Lets Claude draw, place and change TIC event objects, organise sheets and run the suite's reports in your own Vectorworks drawing. Needs the TIC Event Suite on the Pro plan.",
-      "version": "0.7.1",
+      "version": "0.7.2",
       "homepage": "https://manual.theimaginationcollaborative.online"
     }
   ]
