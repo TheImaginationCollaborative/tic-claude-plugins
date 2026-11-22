@@ -1,4 +1,4 @@
-# TIC Event Suite for Vectorworks (0.7.0)
+# TIC Event Suite for Vectorworks (0.7.1)
 
 Lets your own Claude work in your Vectorworks drawing through the TIC Event Suite: draw, place TIC objects, change their settings, organise layers and sheets, and run the suite's reports and jobs.
 
