@@ -33,3 +33,24 @@
 
 ## The Event Brief
 suite_jobs event_brief saves a blank brief to Downloads or the folder used last, for the organiser to fill in. Say so first.
+
+To import a filled brief from Downloads: suite_jobs import_event_brief with file (its name in Downloads, or last for the newest). The first run imports nothing and says what it will lay and replace. Say that to the customer, wait for yes, then run it again with go true. Add site when the brief has more than one site. One Undo takes the import back.
+
+## Import a file into the drawing
+suite_jobs import_file with file: its full path on the customer's computer, or its name in Downloads. It imports DXF, DWG, IFC, OBJ, 3DS, IGES, SAT, Parasolid (x_t), SketchUp, PNG, JPG and TIF with no box. Revit, shapefile, PDF and anything else are imported in Vectorworks: File > Import.
+
+A DXF or DWG on a georeferenced drawing lands on its real-world position, its numbers read in the drawing's coordinate system. Say which system that is before importing, as a file drawn in another system lands in the wrong place. A file with no real-world numbers stays where it was drawn.
+
+For an OBJ ask what one unit in the file is and pass units: mm, cm, m, in or ft. For an image pass x, y for its centre.
+
+Check the size first. Run import_file with check true: it imports nothing. For a DXF or OBJ it reads the file's own width and depth; for a SketchUp file it reads the units the file is set to; for any other kind it says the size cannot be read yet. Put what it says to the customer and ask whether it is right for what the file is: a stadium 130 millimetres wide was drawn in the wrong units.
+
+After any import the answer gives the size it came in at. Say it to the customer and ask the same question. A wrong size means the file was drawn at that size: Modify > Scale Objects in Vectorworks puts it right. Edit > Undo does not take an import back.
+
+A file of 5 MB or more answers first with its megabytes and imports nothing. Tell the customer it can take from a few minutes to over half an hour and Vectorworks will not answer until it is done, wait for yes, then run it again with go true.
+
+## The Event Brief from the portal
+To take the client's brief straight off the TIC client portal: suite_jobs sync_event_brief. With no event it lists the events this licence can sync; then run it with event. It answers the same way as the import: say what it will change, wait for yes, run again with go true.
+
+## The Drawing Audit and Publish
+suite_jobs audit and suite_jobs publish both answer first with words for the customer. Say them word for word, wait for yes, then run again with go true. Publish needs reports run with html true first.
